@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video_Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+    rel="icon"
+    type="image/png"
+    href="https://www.google.com/s2/u/0/favicons?domain=jacinto.design"
+  />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- https://cdn.pixabay.com/video/2024/01/28/198358-907598215_large.mp4 -->
+</head>
+<body>    
+    <div class="player">
+        <video src="Untitled.mp4" class="video" playsinline></video>
+        <!-- show controls -->
+        <div class="show-controls">
+            <!-- controls Container -->
+            <div class="controls-container">
+                <!-- Progress bar -->
+                <div class="progress-range" title="seek">
+                    <div class="progress-bar"></div>
+                </div>
+                <!-- Control-group -->
+                <div class="control-group">
+                    <!-- Left-Controls -->
+                    <div class="controls-left">
+                        <!-- play/pause -->
+                        <div class="play-controls">
+                           <i class="fas fa-play" title="Play" id="play-btn"></i>
+                        </div>
+                        <!-- Volume -->
+                        <div class="volume">
+                            <div class="volume-icon">
+                                <i class="fas fa-volume-up" title="Mute" id="volume-icon"></i></div>
+                            <!-- progress bar for change volume -->
+                            <div class="volume-range" title="Change Volume">
+                                <div class="volume-bar"></div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                    <!-- Right controls -->
+                    <div class="controls-right">
+                        <!-- Speed -->
+                        <div class="speed" title="Playback-Rate">
+                            <select name="playback-rate" class="player-speed">
+                                <option value="0.5">0.5 x</option>
+                                <option value="0.75">0.75 x</option>
+                                <option value="1" selected>1 x</option>
+                                <option value="1.5">1.5 x</option>
+                                <option value="2">2 x</option>
+                            </select>
+                        </div>
+                        <!-- Time -->
+                       <div class="time">
+                        <span class="time-elapsed">00:00 /</span>
+                        <span class="time-duration">2:00 </span>
+                       </div>
+                       <!-- Full Screen -->
+                       <div class="fullscreen">
+                        <i class="fas fa-expand"></i>
+                       </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+</html>
